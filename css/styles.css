@@ -1,53 +1,392 @@
 *{
-    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
-.title{
-    font-weight: 700;
-    font-size: 42px;
+body{
+    background-color: #fafafa;
 }
 
-.subtitle{
-    font-weight: 600px;
-    text-align: center;
-}
-
-li{
-    list-style: none;
-}
+/* Logo */
 
 .logoMedio{
     width: 50px;
     height: 50px;
 }
 
-.logoChico{
-    width: 30px;
-    height: 30px;
-}
-
 .logoGrande{
-    width: 300pxpx;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 
-.menuBusqueda{
-    width: 150px;
+/* Header */
+
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 80px;
+    align-items: center;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1{
+    font-weight: 400;
+}
+
+h1 a{
+    color: black;
+    text-decoration: none;
+}
+
+.header-list{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-input{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#busqueda{
     height: 30px;
+    padding: 5%;
+    border: #f1f1f1 solid 1px;
+    border-radius: 20px;
 }
 
-.banner{
+/* listas */
+
+li{
+    margin: 10px;
+    list-style: none;
+}
+
+li a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+/* main index */
+
+.banner-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 50px;
+    margin-bottom: 10px;
+}
+
+.banner-img{
     width: 100%;
-    height: 20%;
+    height: 150px;
 }
 
-.pItalic{
-    font-style: italic;
+.banner-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-link{
-    color: #04A7C8;
+h2{
+    font-weight: 200;
+    font-size: 25px;
 }
 
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px 50px 0 50px;
+    column-gap: 50px;
+    row-gap: 50px;
+}
 
+.product-item{
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
 
+.product-img{
+    background-color: #8b98a5;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-item p{
+    height: auto;
+    width: 100%;
+    padding: 18px;
+}
+
+/* main productos */
+
+.menu-container{
+    width: 50%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;   
+}
+
+/* main nosotros */
+
+.desc-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas: "logo texto";
+    align-items: center;
+}
+
+.desc-container img{
+    grid-area: logo;
+}
+
+.desc-container p{
+    grid-area: texto;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 5%;
+}
+
+.media-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "video map";
+    padding: 5% 5% 0 5%;
+    column-gap: 20px;
+}
+
+.media-item-video{
+    grid-area: video;
+    width: 100%;
+    width: 100%;
+}
+
+.media-item-map{
+
+    grid-area: map;
+}
+
+/* main contacto */
+
+.contact-container{
+    display: flex;
+}
+
+.contact-form{
+    width: 50%;
+}
+
+.contact-tel{
+    display: flex;
+}
+
+.contact-tel img{
+    width: 30%;
+    height: 30%;
+}
+
+/* main faq*/
+
+h2{
+    text-align: center;
+}
+
+.faq-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 50px;
+    column-gap: 200px;
+    row-gap: 100px;
+}
+
+.faq-item{
+    display: flex;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+/* footer */    
+
+footer{
+    margin-top: 20px;
+}
+
+#footer-copy{
+    font-weight: 200;
+    grid-area: copy;
+}
+
+.footer-container{
+    margin: 50px 4% 10px 41%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "copy redes";
+    align-items: center;
+}
+
+.footer-item-redes{
+    grid-area: redes;
+    display: flex;
+    justify-content: right;
+}
+
+.footer-item-redes a{
+    margin: 1%;
+}
+
+/* media queries */
+
+/*mobile */
+
+@media only screen and (max-width: 576px) {
+    /* header mobile */
+    .header-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "nav logo input";
+    }
+    .header-logo{
+        grid-area: logo;
+    }
+    .header-logo h1{
+        display: none;
+    }
+    .header-list{
+        display: none;
+    }
+    .header-input{
+        display: none;
+    }
+    /* main mobile */
+    .product-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr)
+    }
+    .product-item{
+        flex-direction: column;
+        width: 100%;
+    }
+    /* main nosotros */
+    .desc-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "logo"
+        "texto";
+    }
+    .desc-container img{
+        grid-area: logo;
+        justify-self: center;
+    }
+    .desc-container p{
+        grid-area: texto;
+    }
+    .media-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "video"
+        "map";
+        row-gap: 10px;
+    }
+    .media-item-video{
+        grid-area: video;
+    }
+    .media-item-map{
+        grid-area: map;
+    }
+    /* footer mobile */
+    .footer-copy{
+        width: 100%;
+    }
+    .logoChico{
+        width: 20px;
+        height: 20px;
+    }
+}
+/* tablet */
+
+@media only screen and (min-width: 577px)
+and (max-width: 992px){
+    .header-container{
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: "logo nav input";
+    }
+    .header-logo{
+        grid-area: logo;
+    }
+    .header-logo h1{
+        display: none;
+    }
+    .header-list{
+        grid-area: nav;
+    }
+    .header-list li a{
+        font-size: 1rem;
+    }
+    .header-input{
+        grid-area: input;
+    }
+    .product-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr)
+    }
+    .product-item{
+        flex-direction: column;
+    }
+    .product-img{
+        object-fit: contain;
+    }
+/* main nosotros */
+    .desc-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "logo"
+        "texto";
+    }
+    .desc-container img{
+        grid-area: logo;
+        justify-self: center;
+    }
+    .desc-container p{
+        grid-area: texto;
+    }
+    .media-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "video"
+    "mapa";
+    row-gap: 10px;
+    }
+    .media-item-video{
+    grid-area: video;
+    }
+    .media-item-map{
+    grid-area: mapa;
+    }
+}

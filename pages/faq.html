@@ -3,105 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
     <link rel="stylesheet" href="../css/styles.css">
+    <!--Fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <title>Preguntas Frecuentes</title>
 </head>
 <body>
-    <header>
-            <nav>
-                <img src="../images/logo.png" alt="Logo" class="logoMedio">
-                <h1 class="title">G-SHOP</h1>
-                <ul>
+    <header class="header-container">
+        <div class="header-logo">
+            <img src="../images/logo.png" alt="Logo" class="logoMedio">
+            <h1><a href="./index.html">G-SHOP</a></h1>
+        </div>
+        <nav>
+            <div>
+                <ul class="header-list">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-                <a href=""><img src="../images/carrito.png" alt="carrito" class="logoChico"></a>
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Busqueda" class="menuBusqueda">
-                </form>
-            </nav>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                </ul>  
+            </div>
+        </nav>
+        <div class="header-input">
+            <input type="text" name="busqueda" placeholder="Busqueda" id="busqueda">
+        </div>
     </header>
     <main>
         <h2>Preguntas Frecuentes</h2>
-        <span>
-            <img src="../images/delivery.png" alt="delivery" class="logoMedio">
-            <h2>
-                Envios y devoluciones
-            </h2>
-            <ul>
-                <li>
-                    <a href="">Seguir mi pedido</a>
-                </li>
-                <li>
-                    <a href="">Devolver un producto</a>
-                </li>
-                <li>
-                    <a href="">Ver todo</a>
-                </li>
-            </ul>
-        </span>
-        <span>
-            <img src="../images/carrito.png" alt="carrito" class="logoMedio">
-            <h2>Compras y formas de pago</h2>
-            <ul>
-                <li>
-                    <a href="">Métodos de pago</a>
-                </li>
-                <li>
-                    <a href="">Cancelar una compra</a>
-                </li>
-                <li>
-                    <a href="">Ver todo</a>
-                </li>
-            </ul>
-        </span>
-        <span>
-            <h2>
-                Sucursales
-            </h2>
-            <img src="../images/brujula.png" alt="brujula" class="logoMedio">
-            <ul>
-                <li>
-                    <a href="">Acercate a nosotros</a>
-                </li>
-                <li>
-                    <a href="">Nuestros horarios</a>
-                </li>
-                <li>
-                    <a href="">Ver todo</a>
-                </li>
-            </ul>
-        </span>
-        <span>
-            <h2>
-                Soporte técnico
-            </h2>
-            <img src="../images/soporte.png" alt="soporte" class="logoMedio">
-            <ul>
-                <li>
-                    <a href="">Problemas con la web</a>
-                </li>
-                <li>
-                    <a href="">Problemas con una compra</a>
-                </li>
-                <li>
-                    <a href="">Ver todo</a>
-                </li>
-            </ul>
-        </span>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div>
+                    <img src="../images/delivery.png" alt="delivery">
+                    <p>Delivery</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>Seguir mi pedido</li>
+                        <li>Devolver un producto</li>
+                        <li>Problemas con mi pedido</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div>
+                <img src="../images/carrito.png" alt="carrito">
+                <p>Métodos de pago</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>Métodos de pago</li>
+                        <li>Cancelar una compra</li>
+                        <li>Ver más</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div>
+                <img src="../images/brujula.png" alt="brujula">
+                <p>Sucursales</p>                    
+                </div>
+                <div>
+                    <ul>
+                        <li>Acercate a nosotros</li>
+                        <li>Nuestros horarios</li>
+                        <li>Ver más</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div>
+                    <img src="../images/soporte.png" alt="soporte">
+                    <p>Soporte técnico</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>Problemas con el sitio web</li>
+                        <li>Problemas con una compra</li>
+                        <li>Ver más</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <span>
+    <footer class="footer-container">
+        <div class="footer-item">
+            <p id="footer-copy">Diseñado por Sanchez Francisco</p>
+        </div>
+        <div class="footer-item-redes">
             <a href="https://twitter.com"><img src="../images/twitter.png" alt="Twitter" class="logoChico"></a>
             <a href="https://instagram.com"><img src="../images/instagram.png" alt="Instagram" class="logoChico"></a>
-            <a href="https://facebook.com"><img src="/images/facebook.png" alt="Facebook" class="logoChico"></a>
-        </span>
+            <a href="https://web.whatsapp.com/"><img src="../images/whatsapp.png" alt="Whatsapp" class="logoChico"></a>
+            <a href="https://facebook.com"><img src="../images/facebook.png" alt="Facebook" class="logoChico"></a>
+        </div>
     </footer>
 </body>
 </html>

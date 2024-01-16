@@ -3,70 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--CSS-->
-    <link rel="stylesheet" href="css/styles.css">
     <!--Fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
     <title>G-SHOP</title>
 </head>
 <body>  
-    <header>
-        <nav>
-            <img src="./images/logo.png" alt="Logo" class="logoMedio">
-            <h1 class="title">G-SHOP</h1>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/productos.html">Productos</a></li>
-                <li><a href="pages/nosotros.html">Nosotros</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-                <li><a href="pages/faq.html">FAQ</a></li>
-            </ul>
-            <a href=""><img src="images/carrito.png" alt="carrito" class="logoChico"></a>
-            <form action="">
-                <input type="text" placeholder="Busqueda" class="menuBusqueda">
-            </form>
-        </nav>
+    <header class="header-container">
+            <div class="header-logo">
+                <img src="./images/logo.png" alt="Logo" class="logoMedio">
+                <h1><a href="./index.html">G-SHOP</a></h1>
+            </div>
+            <nav>
+                <div>
+                    <ul class="header-list">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./pages/productos.html">Productos</a></li>
+                        <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                        <li><a href="./pages/faq.html">FAQ</a></li>
+                    </ul>  
+                </div>
+            </nav>
+            <div class="header-input">
+                <input type="text" name="busqueda" placeholder="Busqueda" id="busqueda">
+            </div>
     </header>
     <main>
-        <div>
-            <img src="./images/banner.jpg" alt="banner" class="banner">
+        <div class="banner-container">
+            <div class="banner-item">
+                <img src="./images/banner.jpg" alt="banner" class="banner-img">
+            </div>
+            <div class="banner-item banner-p">
+                <h2>Encontrá el sonido que estás buscando</h2>
+            </div>
         </div>
-        <div>
-            <h2 class="subtitle">Encontrá el sonido que estás buscando</h2>
-        </div>
-        <section>
-            <article>
-                <img src="" alt="Producto 1">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis magni sit recusandae veniam voluptatum,
-                    quod minima impedit incidunt soluta dolore et dolores omnis, accusantium rerum expedita culpa quae,
-                    dolorem necessitatibus.</p>
+        <section class="product-container">
+            <article class="product-item">
+                <img src="./images/jazzmaster.png" alt="producto1" class="product-img">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Nobis omnis, provident doloremque deserunt assumenda rerum laudantium.<br> Ullam voluptatibus aliquam numquam nisi et consequuntur sunt.</p>
             </article>
-            <article>
-                <img src="" alt="Producto 2">    
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis magni sit recusandae veniam voluptatum,
-                    quod minima impedit incidunt soluta dolore et dolores omnis, accusantium rerum expedita culpa quae,
-                    dolorem necessitatibus.</p>
+            <article class="product-item">
+                <img src="./images/bajo.png" alt="producto2" class="product-img">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Facere officiis eveniet iste deserunt amet dolor aut.<br> Alias tempore harum ipsam quaerat animi reiciendis necessitatibus.</p>
             </article>
-            <article>
-                <img src="" alt="Producto 3">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis magni sit recusandae veniam voluptatum,
-                    quod minima impedit incidunt soluta dolore et dolores omnis, accusantium rerum expedita culpa quae,
-                    dolorem necessitatibus.</p>
+            <article class="product-item">
+                <img src="./images/telecaster.png" alt="producto3" class="product-img">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Mollitia a dicta ipsam culpa ducimus ea in quae facilis aperiam.<br> Natus quis quaerat nam explicabo sed quidem rerum!<br> Culpa, minima praesentium.</p>
+            </article>
+            <article class="product-item">
+                <img src="./images/telecaster.png" alt="producto4" class="product-img">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Mollitia a dicta ipsam culpa ducimus ea in quae facilis aperiam<br> Natus quis quaerat nam explicabo sed quidem rerum!<br> Culpa, minima praesentium.</p>
             </article>
         </section>
     </main>
-    <footer>
-        <span>
-            <p>Diseñado por Sanchez Francisco</p>
-        </span>
-        <span>
+    <footer class="footer-container">
+        <div class="footer-item">
+            <p id="footer-copy">Diseñado por Sanchez Francisco</p>
+        </div>
+        <div class="footer-item-redes">
             <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" class="logoChico"></a>
             <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram" class="logoChico"></a>
+            <a href="https://web.whatsapp.com/"><img src="images/whatsapp.png" alt="Whatsapp" class="logoChico"></a>
             <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" class="logoChico"></a>
-        </span>
+        </div>
     </footer>
 </body>
 </html>
