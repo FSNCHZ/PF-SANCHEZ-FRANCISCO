@@ -1,0 +1,26 @@
+footer{
+margin-top: 20px;
+}
+
+#footer-copy{
+    font-weight: 200;
+    grid-area: copy;
+}
+
+.footer{
+    &--container{
+        margin: 50px 4% 10px 41%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "copy redes";
+        align-items: center;
+    }
+    &--itemredes{
+        grid-area: redes;
+        display: flex;
+        justify-content: right;
+        a{
+            margin: 1%;
+        }
+    }
+}

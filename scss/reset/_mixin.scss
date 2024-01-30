@@ -1,0 +1,36 @@
+// Dimensiones
+@mixin sizes ($h, $w) {
+    height: $h;
+    width: $w;
+}
+
+// Fonts size y weight
+@mixin fonts ($fs, $fw) {
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+// Flex
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Sombreados
+
+@mixin card-shadow{
+    box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.42);
+}
+
+@mixin nav-shadow{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: 1px 1px 7px -4px rgba(0, 0, 0, 0.20);
+}
+    

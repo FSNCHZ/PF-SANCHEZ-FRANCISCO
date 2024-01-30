@@ -1,0 +1,51 @@
+.logo{
+    &Chico{
+        @include sizes (20px, 20px)
+    }
+    &Medio{
+        @include sizes (50px, 50px);
+    }
+    &Grande{
+        @include sizes (200px, 200px);
+    }
+}
+
+h1{
+    @include fonts (35px, 400);
+
+     a{
+    color: black;
+    text-decoration: none;
+    }
+
+}
+
+li {
+    a{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.header-input{
+    border-radius: 15px;
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+.navbar-toggler{
+    border: none;
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+.nav{
+    &-header{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        @include nav-shadow;
+    }
+}

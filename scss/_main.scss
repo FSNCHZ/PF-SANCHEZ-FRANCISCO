@@ -1,0 +1,53 @@
+.banner-img{
+    @include sizes (150px, 100%);
+}
+
+h2{
+    @include fonts (30px, 200);
+    text-align: center;
+}
+
+.product{
+    &--img{
+        background-color: $bck-terciario;
+        @include card-shadow;
+        @include sizes (300px, 100%);
+        object-fit: contain;
+    }
+    &--card{
+        background-color: $bck-secundario;  
+        @include card-shadow;
+    }
+}
+
+.nav{
+    &-productos{
+        @include nav-shadow;
+        margin: 10px 10px;
+    }
+}
+
+.subtitle{
+    margin: 10px 10px;
+}
+
+.btn{
+    background-color: $bck-btn;
+    border: 0.5px solid #5e5e5e;
+    &:hover{
+        background-color: $bck-btn-h;
+        border: 0.5px solid #838383;
+    }
+}
+
+.contact{
+    &-form{
+        @include sizes (100%, 40%);
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    &-msg{
+        @include sizes (100%, 80%)
+    }
+}

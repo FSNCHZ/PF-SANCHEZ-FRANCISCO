@@ -1,5 +1,171 @@
-.unaclase {
-  background-color: blue;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.logoChico {
+  height: 20px;
+  width: 20px;
+}
+.logoMedio {
+  height: 50px;
+  width: 50px;
+}
+.logoGrande {
+  height: 200px;
+  width: 200px;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 400;
+}
+h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.header-input {
+  border-radius: 15px;
+}
+.header-input:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav-header {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 15px;
+  box-shadow: 1px 1px 7px -4px rgba(0, 0, 0, 0.2);
+}
+
+.banner-img {
+  height: 150px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.product--img {
+  background-color: #8b98a5;
+  box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.42);
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+.product--card {
+  background-color: #ffffff;
+  box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.42);
+}
+
+.nav-productos {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 15px;
+  box-shadow: 1px 1px 7px -4px rgba(0, 0, 0, 0.2);
+  margin: 10px 10px;
+}
+
+.subtitle {
+  margin: 10px 10px;
+}
+
+.btn {
+  background-color: #696969;
+  border: 0.5px solid #5e5e5e;
+}
+.btn:hover {
+  background-color: #969696;
+  border: 0.5px solid #838383;
+}
+
+.contact-form {
+  height: 100%;
+  width: 40%;
+}
+.contact-form:focus {
+  box-shadow: none;
+}
+.contact-msg {
+  height: 100%;
+  width: 80%;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+#footer-copy {
+  font-weight: 200;
+  grid-area: copy;
+}
+
+.footer--container {
+  margin: 50px 4% 10px 41%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "copy redes";
+  align-items: center;
+}
+.footer--itemredes {
+  grid-area: redes;
+  display: flex;
+  justify-content: right;
+}
+.footer--itemredes a {
+  margin: 1%;
+}
+
+/* media queries */
+/* tablet */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .product-img {
+    object-fit: contain;
+  }
+  .nav-productos {
+    width: 70%;
+  }
+}
+/*mobile */
+@media only screen and (max-width: 576px) {
+  /* header mobile */
+  h1 {
+    display: none;
+  }
+  /* footer mobile */
+  .footer-copy {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

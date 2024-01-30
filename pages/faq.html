@@ -6,7 +6,7 @@
     <!--BS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--CSS-->
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!--Fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav text-center me-auto mx-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav nav-header text-center me-auto mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
@@ -49,72 +49,180 @@
             </nav>
     </header>
     <main>
-        <h2>Preguntas Frecuentes</h2>
-        <div class="faq-container">
-            <div class="faq-item">
-                <div>
-                    <img src="../images/delivery.png" alt="delivery">
-                    <p>Delivery</p>
+        <h2 class="subtitle">Preguntas Frecuentes</h2>
+        <div class="container">
+            <div class="row gx-5 gy-5">
+                <div class="col-12 col-lg-6">
+                    <div class="row align-items-center my-3">
+                        <div class="col-auto">
+                        <img src="../images/delivery.png" alt="delivery">
+                        </div>
+                        <div class="col">
+                            <h2>
+                                Envios
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Seguir mi pedido
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Si deseas seguir tu pedido, deberás tener el código de seguimiento a mano, e ingresar a la página del correo correspondiente. Una vez allí ingresar el código de seguimiento.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Devolver un producto
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Recordá que solo podrás realizar devoluciones si el/los producto/s están en buen estado y con su correspondiente orden de compra. Contactáte con nosotros para poder realizarla +54 9 114564879</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Problemas con el envío
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Para cualquier inconveniente con el envío, deberás contactarte con la empresa del correo.</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <ul>
-                        <li>Seguir mi pedido</li>
-                        <li>Devolver un producto</li>
-                        <li>Problemas con mi pedido</li>
-                    </ul>
+                <div class="col-12 col-lg-6">
+                    <div class="row align-items-center my-3">
+                        <div class="col-auto">
+                            <img src="../images/carrito.png" alt="carrito">
+                        </div>
+                        <div class="col">
+                            <h2>
+                                Compras
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Métodos de pago
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Aceptamos cualquier tipo de tarjeta de débito y/o crédito. También podrás realizar deposito y/o transferencias al siguiente CBU: 000012345648912</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                Cancelar una compra
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Si querés cancelar una compra ya sea por arrepentimiento o cualquier otro motívo, contactános +54 9 4546578</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                ¿Cómo comprar online?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Ingresa al sitio web, navega por los productos hasta encontrar lo que buscas. Añade al carrito, completa la información de envío y elige tu método de pago. Confirma la compra para finalizar</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="faq-item">
-                <div>
-                <img src="../images/carrito.png" alt="carrito">
-                <p>Métodos de pago</p>
+                <div class="col-12 col-lg-6">
+                    <div class="row align-items-center my-3">
+                        <div class="col-auto">
+                            <img src="../images/brujula.png" alt="brujula">
+                        </div>
+                        <div class="col">
+                            <h2>
+                                Sucursales
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                Acercáte a nosotros
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Podrás encontrar un listado con la dirección de todas nuestras sucursales en este <a href="#">link</a></div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                Nuestros horarios
+                                </button>
+                            </h2>
+                            <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Atendemos de Lunes a Viernes de 8 a 20hs. Y los Sábados de 10hs a 18hs</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <ul>
-                        <li>Métodos de pago</li>
-                        <li>Cancelar una compra</li>
-                        <li>Ver más</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div>
-                <img src="../images/brujula.png" alt="brujula">
-                <p>Sucursales</p>                    
-                </div>
-                <div>
-                    <ul>
-                        <li>Acercate a nosotros</li>
-                        <li>Nuestros horarios</li>
-                        <li>Ver más</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div>
-                    <img src="../images/soporte.png" alt="soporte">
-                    <p>Soporte técnico</p>
-                </div>
-                <div>
-                    <ul>
-                        <li>Problemas con el sitio web</li>
-                        <li>Problemas con una compra</li>
-                        <li>Ver más</li>
-                    </ul>
+                <div class="col-12 col-lg-6">
+                    <div class="row align-items-center my-3">
+                        <div class="col-auto">
+                            <img src="../images/soporte.png" alt="soporte">
+                        </div>
+                        <div class="col">
+                            <h2>
+                                Soporte Técnico
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                                Problemas con la web
+                                </button>
+                            </h2>
+                            <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Si una página web presenta problemas técnicos, espera unos minutos y actualiza la página. Si persisten, contacta al soporte técnico para obtener ayuda y soluciones rápidas.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                                Problemas con una compra
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Ante problemas de compras en una tienda online, verifica la conexión a internet, intenta desde otro dispositivo onavegador. Si persisten, comunícate con el servicio de atención al cliente.</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="footer-container">
-        <div class="footer-item">
-            <p id="footer-copy">Diseñado por Sanchez Francisco</p>
+    <footer class="footer--container">
+        <div class="footer--item">
+            <p id="footer--copy">Diseñado por Sanchez Francisco</p>
         </div>
-        <div class="footer-item-redes">
+        <div class="footer--itemredes">
             <a href="https://twitter.com"><img src="../images/twitter.png" alt="Twitter" class="logoChico"></a>
             <a href="https://instagram.com"><img src="../images/instagram.png" alt="Instagram" class="logoChico"></a>
             <a href="https://web.whatsapp.com/"><img src="../images/whatsapp.png" alt="Whatsapp" class="logoChico"></a>
             <a href="https://facebook.com"><img src="../images/facebook.png" alt="Facebook" class="logoChico"></a>
         </div>
     </footer>
+    <!--JS BS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
