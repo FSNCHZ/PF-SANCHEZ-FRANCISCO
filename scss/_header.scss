@@ -20,7 +20,7 @@ h1{
 
 }
 
-li {
+li{
     a{
         &:hover{
             text-decoration: underline;
@@ -43,6 +43,7 @@ li {
 
 .nav{
     &-header{
+        background-color: $bck-secundario;
         width: 50%;
         display: flex;
         justify-content: space-around;

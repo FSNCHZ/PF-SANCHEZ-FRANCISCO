@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En G-SHOP manejamos la más alta calidad en instrumentos y dispositivos que necesites.">
     <!--BS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="../css/main.css">
     <!--Fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-    <title>Productos</title>
+    <title>G-SHOP - Productos</title>
 </head>
 <body>
     <header>
@@ -44,9 +47,9 @@
                     <form class="d-flex justify-content-center" role="search">
                       <input class="form-control me-2 header-input" type="search" placeholder="Busqueda" aria-label="Search">
                     </form>
-                  </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
     <main>
         <div>
@@ -80,7 +83,7 @@
         </nav>
         <section class="container my-0">
             <div class="row gy-5">
-                <div class="col-12">
+                <article data-aos="zoom-in" class="col-12">
                     <div class="row product--card">
                         <div class="col-12 col-md-3 px-0">
                             <img src="../images/jazzmaster.png" alt="jazzmaster" class="product--img">
@@ -90,8 +93,8 @@
                                 La Fender Jazzmaster es una obra maestra de la guitarra eléctrica que ha dejado una marca indeleble en la música desde su debut en 1958. Con un cuerpo elegante y un mástil cómodo, esta guitarra ofrece un sonido distintivo gracias a sus dos pastillas single-coil. La versatilidad tonal se amplifica con el interruptor de circuito de ritmo, permitiendo ajustes independientes para cada pastilla. Su puente flotante y vibrato icónico añaden expresividad única. Desde surf rock hasta indie, la Jazzmaster ha sido adoptada por músicos de diversos géneros.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12">
+                </article>
+                <article data-aos="fade-up" class="col-12">
                     <div class="row product--card">
                         <div class="col-12 col-md-3 px-0">
                             <img src="../images/bajo.png" alt="bajo" class="product--img">
@@ -101,8 +104,8 @@
                                 El bajo Precision Bass (P-Bass) de Fender es un clásico atemporal que ha definido el sonido del bajo eléctrico desde su lanzamiento en 1951. Con su diseño icónico y cuerpo contorneado, ofrece comodidad y estilo. La pastilla dividida proporciona un sonido potente y definido, fundamental en el desarrollo de estilos como el rock y el funk. Su simplicidad es su fortaleza, con un solo control de volumen y tono, permitiendo una fácil manipulación del sonido</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12">
+                </article>
+                <article data-aos="fade-up" class="col-12">
                     <div class="row product--card">
                         <div class="col-12 col-md-3 px-0">
                             <img src="../images/bateria.png" alt="bateria" class="product--img">
@@ -111,8 +114,8 @@
                             <p class="p-4">Esta batería es una opción asequible que ofrece una sólida experiencia percusiva para músicos en formación. Con sus tambores estándar, platillos y pedal de bombo, cumple con las necesidades básicas para aprender y practicar. Aunque puede carecer de las características premium de modelos más costosos, proporciona una plataforma sólida para desarrollar habilidades rítmicas. Su estructura resistente y fácil montaje hacen que sea ideal para principiantes y para aquellos que buscan un set de práctica sin comprometer su presupuesto.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12">
+                </article>
+                <article data-aos="fade-up" class="col-12">
                     <div class="row product--card">
                         <div class="col-12 col-md-3 px-0">
                             <img src="../images/mic.png" alt="mic" class="product--img">
@@ -121,7 +124,7 @@
                             <p class="p-4">El micrófono Shure es sinónimo de calidad y rendimiento en el mundo del audio. Con una reputación legendaria, la marca ofrece una gama de micrófonos que satisfacen las demandas de músicos y profesionales del sonido. Ya sea en el escenario o en el estudio, los micrófonos Shure destacan por su construcción duradera, claridad de sonido excepcional y versatilidad. La fiabilidad de la marca se ha convertido en un estándar en la industria, convirtiendo a los micrófonos Shure en una elección confiable para artistas y técnicos.</p>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
     </main>
@@ -136,6 +139,11 @@
             <a href="https://facebook.com"><img src="../images/facebook.png" alt="Facebook" class="logoChico"></a>
         </div>
     </footer>
+    <!--JS AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!--JS BS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

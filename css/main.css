@@ -50,6 +50,7 @@ li a:hover {
 }
 
 .nav-header {
+  background-color: #ffffff;
   width: 50%;
   display: flex;
   justify-content: space-around;
@@ -88,6 +89,7 @@ h2 {
 }
 
 .nav-productos {
+  background-color: #ffffff;
   width: 50%;
   display: flex;
   justify-content: space-around;

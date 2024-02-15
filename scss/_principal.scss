@@ -22,6 +22,7 @@ h2{
 
 .nav{
     &-productos{
+        background-color: $bck-secundario;
         @include nav-shadow;
         margin: 10px 10px;
     }
